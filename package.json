@@ -1,0 +1,23 @@
+{
+  "name": "nc-ui-aqa",
+  "version": "1.0.0",
+  "description": "Automated testing of namecheap with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./src -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone XS ./src -s takeOnFails=true",
+    "test:safari": "testcafe safari ./src -s takeOnFails=true"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Yehor",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "testcafe": "^1.8.4",
+    "typescript": "^3.8.3"
+  }
+}
